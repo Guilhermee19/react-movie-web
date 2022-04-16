@@ -9,6 +9,8 @@ function BannerTop({ banner }) {
             <div className='effect_glass'>
                 <div className='card_info'>
                     <h2> {banner.title != null ? banner.title : banner.name} </h2>
+                    <h3> {banner.overview } </h3>
+                    <button className='btn_details'> Mais Detalhes </button>
                 </div>
             </div>
 

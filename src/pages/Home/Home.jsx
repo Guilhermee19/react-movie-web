@@ -29,11 +29,11 @@ function Home({ url }) {
         console.log(data)
         list = list.concat(data.results)
 
-        if (data.total_pages != page) {
+        if (data.total_pages !== page) {
           getMovie(page + 1)
         }
         else {
-          let list_save = list.filter(el => (el.poster_path != null && el.backdrop_path != null))
+          let list_save = list.filter(el => (el.poster_path !== null && el.backdrop_path !== null))
           setTop(list_save)
           setBanner(list[0])
 
@@ -53,7 +53,7 @@ function Home({ url }) {
       {loading && (
         <div className="screen_top">
           <BannerTop banner={banner} />
-          <ListPoster SelectBanner={SelectBanner} list_marvel={list_top} />
+          <ListPoster SelectBanner={SelectBanner} banner={banner} list_marvel={list_top} />
         </div>
       )}
 

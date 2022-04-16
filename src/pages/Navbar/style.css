@@ -21,7 +21,7 @@
 }
 
 .menu_options{
-    height: calc(100vh - 50px);
+    height: calc(100vh - 65px);
     display: flex;
     flex-direction: column;
     justify-content: center;

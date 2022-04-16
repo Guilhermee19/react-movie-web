@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Banner } from '../../components/Banner/Banner'
 import './style.css';
 
-function ListPoster({ SelectBanner, list_marvel }) {
+function ListPoster({ SelectBanner, banner, list_marvel }) {
 
   return (
     <>
@@ -12,7 +11,7 @@ function ListPoster({ SelectBanner, list_marvel }) {
         {list_marvel.map((obj) => (
           // <Link to={`/marvel/${obj.id}`} key={obj.id} onClick={() => SelectBanner(obj)} className="card_banner">
           <div key={obj.id} onClick={() => SelectBanner(obj)} className="card_banner">
-            <Banner obj={obj} />
+            <Banner obj={obj} banner={banner}/>
           </div>
         ))}
         

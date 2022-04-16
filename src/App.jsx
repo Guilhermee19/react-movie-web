@@ -14,6 +14,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Switch>
+          <Route exact path={'/'}> <Home /> </Route>
           <Route exact path={'/movie'}> <Movies /> </Route>
           <Route exact path={'/tv'}> <TvShow /> </Route>
           {/* <Route> <Page404 /> </Route> */}

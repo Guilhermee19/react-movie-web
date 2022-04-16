@@ -1,12 +1,24 @@
 .card_space{
-    padding: 10px;
+    padding: 10px 10px 8px 10px;
     border: 3px solid;
     border-color: transparent;
     border-radius: 15px;
     margin: 5px auto;
+    transition: all .2s;
 }
 
-.active{
+/* .card_space:hover{
+    transition: all .2s;
+    border-color: #0299ea;
+} */
+
+.banenr_active{
+    padding: 4px 4px 0 4px;
+    border: 3px solid;
+    border-color: transparent;
+    border-radius: 15px;
+    margin: 5px auto;
+    transition: all .2s;
     border-color: #0299ea;
 }
 
