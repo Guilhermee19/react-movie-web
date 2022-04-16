@@ -1,0 +1,75 @@
+.card_slide{
+    position: relative;
+    width: 95%;
+    height: 45vh;
+    margin: 20px auto;
+    object-fit: cover;
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 888;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.effect_glass{
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+
+.card_info{
+    width: 40%;
+    height: 45vh;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_info h2{
+    width: 90%;
+    font-size: 26px;
+    text-shadow: rgba(0, 0, 0, 0.5) 3px 3px 5px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.image_background{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.image_poster{
+    position: absolute;
+    z-index: 99999;
+    width: 55%;
+    height: 95%;
+    border-radius: 15px;
+    margin-right: 15px;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 750px) {
+    .card_slide{
+        height: 30vh;
+    }
+    .card_info{
+        width: 100%;
+        height: 30vh;
+    }
+    .image_poster{
+        display: none;
+    }
+}

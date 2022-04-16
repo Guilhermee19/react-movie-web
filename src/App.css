@@ -1,38 +1,67 @@
+.screen{
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  padding-left: 60px;
+
+  background: rgb(15,19,46);
+  background: -moz-linear-gradient(166deg, rgba(15,19,46,1) 0%, rgba(6,3,17,1) 81%);
+  background: -webkit-linear-gradient(166deg, rgba(15,19,46,1) 0%, rgba(6,3,17,1) 81%);
+  background: linear-gradient(166deg, rgba(15,19,46,1) 0%, rgba(6,3,17,1) 81%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f132e",endColorstr="#060311",GradientType=1);
+}
+
 .App {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.p_60{
+  padding-left: 120px;
+}
+
+h2{
+  width: 100%;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-track{
+  background: rgb(4, 7, 27);
+  border-radius: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-webkit-scrollbar-thumb{
+  background: rgb(12, 15, 48);
+  border-radius: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  list-style-type: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.effect_glass{
+  width: 100%;
+  height: 100%;
+  background: rgba( 255, 255, 255, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4.5px );
+  -webkit-backdrop-filter: blur( 4.5px );
+  border-radius: 10px;
+  /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 }
