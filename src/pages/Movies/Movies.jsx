@@ -38,6 +38,7 @@ function Movies() {
   }
 
   const SelectBanner = (banner) => {
+      setBanner({})
       setBanner(banner)
   }
 

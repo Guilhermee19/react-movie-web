@@ -21,7 +21,7 @@ function Navbar() {
       <nav className='menu_lateral'>
         <ul className='menu_options'>
           <li className={url === '/' ? 'active' : ''}>
-            <Link as to={'/'} onClick={() => selectScreen('/')}>
+            <Link to={'/'} onClick={() => selectScreen('/')}>
               <Chair />
             </Link> </li>
           <li className={url === '/movie' ? 'active' : ''}>
