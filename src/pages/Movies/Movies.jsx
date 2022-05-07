@@ -37,7 +37,6 @@ function Movies() {
       .catch(err => console.log(err))
   }
 
-
   const SelectBanner = (banner) => {
       setBanner(banner)
   }
