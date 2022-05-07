@@ -20,11 +20,11 @@ function Navbar() {
     <>
       <nav className='menu_lateral'>
         <ul className='menu_options'>
-          <li className={url === '/' ? 'active' : ''}>
+          {/* <li className={url === '/' ? 'active' : ''}>
             <Link to={'/'} onClick={() => selectScreen('/')}>
               <Chair />
-            </Link> </li>
-          <li className={url === '/movie' ? 'active' : ''}>
+            </Link> </li> */}
+          <li className={url === '/movie' || url === '/'  ? 'active' : ''}>
             <Link to={'/movie'}  onClick={() => selectScreen('/movie')}>
               <Movie />
             </Link>  </li>
@@ -33,7 +33,7 @@ function Navbar() {
               <Tv />
             </Link> </li>
         </ul>
-        <li className='card_mode'> <Dark /> </li>
+        {/* <li className='card_mode'> <Dark /> </li> */}
         {/* <li> <Lite /> </li> */}
       </nav>
     </>
